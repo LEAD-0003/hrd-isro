@@ -15,6 +15,10 @@ class DatabaseSeeder extends Seeder
 
             ['name' => 'HQ Admin', 'is_active' => 1, 'created_at' => now(), 'updated_at' => now()],
         ]);
+        DB::table('centres')->insert([
+
+            ['name' => 'HQ', 'is_active' => 1, 'created_at' => now(), 'updated_at' => now()],
+        ]);
         // User::create([
         //     'name' => 'EMP',
         //     'email' => 'emp@isro.gov.in', 
@@ -60,7 +64,7 @@ class DatabaseSeeder extends Seeder
             'password' => Hash::make('password@123'),
             'role' => 'admin',
             'designation_id' => '1',
-            'centre' => 'HQ',
+            'centre_id' => 'HQ',
             'is_active' => 1,
             'created_at' => now(),
             'updated_at' => now(),
