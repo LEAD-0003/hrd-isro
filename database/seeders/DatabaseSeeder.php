@@ -49,7 +49,7 @@ class DatabaseSeeder extends Seeder
 
          User::create([
             'id' => 1,
-            'title' => 'Mr.',
+            'prefix' => 'Mr.',
             'name' => 'ISRO HQ ADMIN',
             'email' => 'admin@isro.gov.in',
             'username' => 'hq_admin_01',
