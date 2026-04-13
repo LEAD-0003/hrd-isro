@@ -59,7 +59,7 @@ class DatabaseSeeder extends Seeder
             'username' => 'hq_admin_01',
             'password' => Hash::make('password@123'),
             'role' => 'admin',
-            'designation' => '1',
+            'designation_id' => '1',
             'centre' => 'HQ',
             'is_active' => 1,
             'created_at' => now(),
