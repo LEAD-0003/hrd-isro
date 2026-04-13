@@ -10,7 +10,10 @@ class DatabaseSeeder extends Seeder
 {
     public function run(): void
     {
-        
+        DB::table('designations')->insert([
+
+            ['name' => 'HQ Admin', 'is_active' => 1, 'created_at' => now(), 'updated_at' => now()],
+        ]);
         // User::create([
         //     'name' => 'EMP',
         //     'email' => 'emp@isro.gov.in', 
